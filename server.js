@@ -4,7 +4,7 @@ const app = express();
 app.use(express.urlencoded({ extended: true}));
 app.use(express.json());
 
-var port = 5000
+var port = process.env.PORT || 5000
 
 
 app.post('/bfhl',(req,res)=>{
